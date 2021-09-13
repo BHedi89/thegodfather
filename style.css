@@ -1,0 +1,309 @@
+/* global css start */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: #1F1F1F;
+    text-align: justify;
+}
+
+h1 {
+	margin-bottom: 2rem;
+	font-family: 'The Godfather', sans-serif;
+	font-weight: normal;
+	font-size: 100px;
+	line-height: 80px;
+}
+
+p {
+	margin: 0 0 1em 0;
+	font-size: 93%;
+	line-height: 1.5em;
+}
+/* global css end */
+
+/* navbar start */
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121212;
+    color: white;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+/* navbar end */
+
+/* body content start */
+div.body-content {
+	padding: 50px 0;
+	color: white;
+	background-color: #1F1F1F;
+}
+/* body content end */
+
+/* inner content start */
+div.inner-content {
+	max-width: 1100px;
+	padding: 0 25px;
+	margin: 0 auto;
+}
+/* inner content end */
+
+/* movie section start */
+div.container {
+	padding-bottom: 50px;
+}
+
+div.section {
+	width: 30%;
+	float: left;
+	margin-right: 5%;
+}
+
+div.last-section {
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	margin: 0 0 10px 0;
+}
+/* movie section end */
+
+/* main content start */
+div.main {
+	width: 65%;
+	float: left;
+	margin-right: 5%;
+}
+
+div.side {
+	width: 30%;
+	float: left;
+	color: black;
+}
+
+h2.critic {
+    color: white;
+}
+/* main content end */
+
+/* Info Boxes start */
+div.info-box-a {
+	background-color: #9bdaef;
+	padding: 20px;
+	font-size: 13px;
+	margin: 0 0 15px 0;
+}
+
+div.info-box-b {
+	background-color: #efdb7f;
+	padding: 20px;
+	font-size: 13px;
+	margin: 0 0 15px 0;
+}
+
+span {
+	font-style: italic;
+}
+/* Info Boxes end */
+
+/* clearfix start */ 
+/* Note(MDN): If an element contains only floated elements, its height collapses to nothing. 
+If you want it to always be able to resize, so that it contains floating elements inside it, 
+you need to self-clear its children. This is called clearfix, and one way to do it is to add 
+clear to a replaced ::after pseudo-element on it. */
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* clear fix end */
+
+/* responsive start */
+@media screen and (max-width: 900px) {
+    div.section {
+        width: 47.5%;
+    }
+    
+    div.middle-section {
+        margin: 0;
+    }
+    
+    div.last-section {
+        clear: both;
+        float: none;
+        padding: 20px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+	div.mobile-size {
+		width: auto;
+		float: none;
+		margin-right: 0;
+	}
+}
+/* responsive end */
+
+/* footer start */
+footer {
+    background-color: #000; 
+    min-width: 400px; 
+    width: 100%; 
+    text-align: center; 
+    line-height: 35px; 
+    height: 70px; 
+    color: #ccc;
+}
+
+a {
+    text-decoration: none; 
+    color: #fff;
+}
+
+a:hover {
+    color: #3399fe;
+}
+
+@media only screen and (min-width: 961px) {
+    .footer-bottom {
+        text-align: left;
+    }
+    
+    .footer-bottom-copyright-text {
+      max-width: 480px; 
+      float: left; 
+      padding: 10px 10px 0px 10px; 
+      line-height: 60px; 
+      height: 60px;
+    }
+
+    .footer-bottom-social-icons {
+      background-color: #000; 
+      text-align: right; 
+    }
+
+    #footer-social-links li {
+        list-style: none; 
+        display: inline-block; 
+        padding: 10px 10px 0px 10px;
+        line-height: 60px; 
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .footer-bottom {
+      text-align: center;
+    }
+
+    .footer-bottom-copyright-text {
+      width: 100%;
+    }
+
+    .footer-bottom-social-icons {
+      background-color: #000;
+    }
+
+    #footer-social-links li {
+      list-style: none; 
+      display: inline-block; 
+      padding: 0px 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .footer-bottom-copyright-text {
+        font-size: 80%;
+    }
+     
+    .footer-bottom-social-icons {
+       font-size: 80%;
+    }
+}
+/* footer end */
