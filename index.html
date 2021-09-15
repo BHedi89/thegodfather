@@ -9,7 +9,6 @@
     <link href="http://fonts.cdnfonts.com/css/the-godfather" rel="stylesheet">
 </head>
 <body>
-    
     <!-- navbar start -->
     <nav class="navbar">
         <div class="brand-title">Best Movies</div>
@@ -37,7 +36,15 @@
                 <h1>The*<br>Godfather</h1>
                 <!-- movie section start -->
                 <div class="section first-section mobile-size">
-                    <img src="images/godfather1.jpg" alt="The Godfather" />
+                    <!-- <img src="images/godfather1.jpg" alt="The Godfather" /> -->
+                    <img 
+                        alt="The Godfather"
+                        src="./godfather-images/godfather1-500.jpg"
+                        srcset="
+                            ./godfather-images/godfather1-500.jpg,
+                            ./godfather-images/godfather1-1000.jpg 2x,
+                            ./godfather-images/godfather1-1500.jpg 3x"
+                    >
                     <h2>Godfather</h2>
                     <p>The Godfather "Don" Vito Corleone is the head of the Corleone mafia family in New York. 
                         He is at the event of his daughter's wedding. Michael, Vito's youngest son and a decorated 
@@ -52,7 +59,15 @@
                 </div>
 			
                 <div class="section middle-section mobile-size">
-                    <img src="images/godfather2.jpg" alt="The Godfather 2" />
+                    <!-- <img src="images/godfather2.jpg" alt="The Godfather 2" /> -->
+                    <img 
+                        src="./godfather-images/godfather2-500.jpg"
+                        alt="The Godfather"
+                        srcset="
+                            ./godfather-images/godfather2-500.jpg 500w,
+                            ./godfather-images/godfather2-1000.jpg 1000w,
+                            ./godfather-images/godfather2-1500.jpg 1500w"
+                    >
                     <h2>Godfather 2</h2>
                     <p>The continuing saga of the Corleone crime family tells the story of a young Vito Corleone 
                         growing up in Sicily and in 1910s New York; and follows Michael Corleone in the 1950s as he 
@@ -61,7 +76,17 @@
                 </div>
 			
                 <div class="section last-section mobile-size">
-                    <img src="images/godfather3.jpg" alt="The Godfather 3" />
+                    <!-- <img src="images/godfather3.jpg" alt="The Godfather 3" /> -->
+                    <img 
+                        src="./godfather-images/godfather3-500.jpg"
+                        srcset="
+                            ./godfather-images/godfather3-500.jpg 500w,
+                            ./godfather-images/godfather3-1000 1000w,
+                            ./godfather-images/godfather3-1500.jpg 1500w"
+                        sizes="
+                            (max-width: 500px) 50vw, 100vw"
+                        alt="The Godfather"
+                    >
                     <h2>Godfather 3</h2>
                     <p>In the final installment of the Godfather Trilogy, an aging Don Michael Corleone seeks to 
                         legitimize his crime family's interests and remove himself from the violent underworld but 
@@ -127,7 +152,7 @@
                         <span>Robert Dominguez, New York Daily News</span>
                     </div>
                     
-                    <div class="info-box-b hide-mobile">
+                    <div class="info-box-b">
                         <h4>The Godfather 2</h4>
                         <p>
                             Francis Ford Coppola's The Godfather, Part II is an even richer, more spellbinding work than its wholly 
@@ -136,7 +161,7 @@
                         <span>Susan Stark, Detroit Free Press</span>
                     </div>
                     
-                    <div class="info-box-b hide-mobile">
+                    <div class="info-box-b">
                         <h4>The Godfather 3</h4>
                         <p>
                             Allows us to take in the full scope of Michael Corleone's (Al Pacino) tragic journey - from optimistic 
